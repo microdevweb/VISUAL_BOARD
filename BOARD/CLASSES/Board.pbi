@@ -163,6 +163,7 @@ EndProcedure
 
 Procedure BOARD_build(*this._BOARD)
   With *this
+    Protected *tmp = *this
     StartVectorDrawing(ImageVectorOutput(\idImage))
     ScaleCoordinates(\myGrid\getZoomFactor(),\myGrid\getZoomFactor(),#PB_Coordinate_User)
     ; draw the grid
@@ -186,6 +187,7 @@ Procedure BOARD_addForm(*this._BOARD,*form)
   With *this
     AddElement(\myForm())
     \myForm() = *form
+    Define *b.BOARD::Box = \myForm()
     ProcedureReturn *form
   EndWith
 EndProcedure
@@ -239,8 +241,8 @@ DataSection
   Data.i @BOARD_addForm()
   E_BOARD:
 EndDataSection
-; IDE Options = PureBasic 5.71 beta 2 LTS (Windows - x64)
-; CursorPosition = 44
-; FirstLine = 24
-; Folding = -f5o9
+; IDE Options = PureBasic 5.71 beta 2 LTS (Windows - x86)
+; CursorPosition = 173
+; FirstLine = 45
+; Folding = 0f5o-
 ; EnableXP

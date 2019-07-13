@@ -102,6 +102,7 @@ Procedure FORM_super(*this._FORM,*s_daughter,*E_daughter,*colors,selectedColor,x
     \myPos\x = x
     \myPos\y = y
     \selectedColor = selectedColor
+    Define b.BOARD::Box = *this
   EndWith
 EndProcedure
 ;}
@@ -125,8 +126,8 @@ DataSection
   Data.i @FORM_setSelecteCallback()
   E_FORM:
 EndDataSection
-; IDE Options = PureBasic 5.71 beta 2 LTS (Windows - x64)
-; CursorPosition = 122
-; FirstLine = 44
-; Folding = EYc+
+; IDE Options = PureBasic 5.71 beta 2 LTS (Windows - x86)
+; CursorPosition = 104
+; FirstLine = 45
+; Folding = EY9-
 ; EnableXP

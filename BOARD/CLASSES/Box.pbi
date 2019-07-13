@@ -90,7 +90,7 @@ EndProcedure
 
 ;}
 ;-* PROTECTED METHODS
-Procedure BOX_draw(*this._BOX,*board._BOARD)
+Procedure BOX_draw(*this._BOX,*board._BOARD,mx = 0,my = 0)
   With *this
     ; we calculate the size
     _BOX_calcul_size(*this)
@@ -326,8 +326,8 @@ DataSection
   Data.i @BOX_addRightContent()
   E_BOX:
 EndDataSection
-; IDE Options = PureBasic 5.71 beta 2 LTS (Windows - x64)
-; CursorPosition = 63
-; FirstLine = 8
-; Folding = x-40-PA0-
+; IDE Options = PureBasic 5.71 beta 2 LTS (Windows - x86)
+; CursorPosition = 93
+; FirstLine = 22
+; Folding = x-4-8PA0-
 ; EnableXP

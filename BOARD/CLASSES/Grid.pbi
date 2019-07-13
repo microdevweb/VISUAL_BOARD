@@ -8,7 +8,7 @@
 ; DATE           : 2019/07/10
 ; *************************************************************************
 ;-* PRIVATE METHODS
-Procedure _GRID_postEvent(*this._GRID,*board._BOARD)
+Procedure _GRID_postEvent(*this._GRID,*board._BOARD,mx = 0,my = 0)
   With *this
     If EventType() = #PB_EventType_MouseWheel
       If GetGadgetAttribute(*board\idCanvas,#PB_Canvas_Modifiers) = #PB_Canvas_Control
@@ -31,7 +31,7 @@ Procedure _GRID_postEvent(*this._GRID,*board._BOARD)
 EndProcedure
 ;}
 ;-* PROTECTED METHODS
-Procedure _GRID_draw(*this._GRID,*board._BOARD)
+Procedure _GRID_draw(*this._GRID,*board._BOARD,mx = 0,my = 0)
   With *this
     ; fill with back color
     Define *c._COLORS = \myColors
@@ -157,8 +157,8 @@ DataSection
   Data.i @GRID_free()
   E_GRID:
 EndDataSection
-; IDE Options = PureBasic 5.71 beta 2 LTS (Windows - x64)
-; CursorPosition = 135
-; FirstLine = 104
-; Folding = --j9-
+; IDE Options = PureBasic 5.71 beta 2 LTS (Windows - x86)
+; CursorPosition = 10
+; FirstLine = 7
+; Folding = -0j9-
 ; EnableXP

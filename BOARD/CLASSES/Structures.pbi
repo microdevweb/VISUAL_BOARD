@@ -140,8 +140,8 @@ Procedure coordianteTo(x,y,*x,*y)
 EndProcedure 
 
 
-; IDE Options = PureBasic 5.71 beta 2 LTS (Windows - x64)
-; CursorPosition = 9
-; FirstLine = 5
+; IDE Options = PureBasic 5.71 beta 2 LTS (Windows - x86)
+; CursorPosition = 126
+; FirstLine = 36
 ; Folding = AA+
 ; EnableXP
